@@ -38,7 +38,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     
-
+ @Override
+    protected void onResume() {
+        super.onResume();
+        LoadAdapter();
+    }
     void LoadAdapter(){
         loadArray();
         MyAddapter adapter = new MyAddapter(getApplicationContext(), models, this);
