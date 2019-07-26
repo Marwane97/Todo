@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    tools:context=".TodoList">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"></include>
+    <TextView
+        android:id="@+id/txt_date_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="aaa"
+        android:layout_below="@id/tool_bar"
+        android:gravity="center"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"/>
+    <EditText
+        android:id="@+id/edit_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="set title"
+        android:paddingTop="20px"
+        android:textSize="40px"
+        android:paddingBottom="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:layout_below="@id/txt_date_add"/>
+    <EditText
+        android:id="@+id/edit_txt_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="take note here"
+        android:gravity="start"
+        android:textSize="45px"
+        android:paddingTop="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:layout_below="@id/edit_txt_title"/>
+
+</RelativeLayout>
